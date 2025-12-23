@@ -23,9 +23,38 @@ a {
   margin-right: auto;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0 1.6rem;
+  /* height: 5rem; */
+  min-width: 11.8rem;
+  line-height: 5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 60rem;
+  border-radius: 2.45rem;
+  background: #171100;
+}
+
+.header .btn-sign-up {
+  min-width: 14.4rem;
+}
+
 /* header */
+.header {
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -2.8rem;
+}
+
 .header .body {
   display: flex;
+  align-items: center;
+  padding: 3.6rem 0 0.8rem;
 }
 
 .nav {
@@ -37,12 +66,14 @@ a {
 }
 
 .nav a {
+  position: relative;
   color: #5f5b53;
   font-weight: 400;
   font-size: 1.6rem;
   padding: 0.8rem 2.1rem;
 }
 
+.nav li.active a,
 .nav a:hover {
   color: #171100;
   /* font-weight: 600; */
@@ -50,10 +81,18 @@ a {
 }
 
 .nav li.active a::after {
+  position: absolute;
+  left: 2.1rem;
+  bottom: 0.6rem;
   display: block;
+  /* Sao ở dưới bottom 6px không được */
   content: "";
-  width: 1.2rem;
+  width: 1.5rem;
   height: 0.2rem;
   border-radius: 0.1rem;
   background: #171100;
+}
+
+.header .action {
+  margin-left: 4.9rem;
 }
