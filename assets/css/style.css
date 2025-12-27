@@ -328,3 +328,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
+.popular-main {
+  padding-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular-main .courses-box {
+  
+}
